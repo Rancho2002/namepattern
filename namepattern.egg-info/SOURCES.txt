@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+namepattern/__init__.py
+namepattern/namepattern.py
+namepattern.egg-info/PKG-INFO
+namepattern.egg-info/SOURCES.txt
+namepattern.egg-info/dependency_links.txt
+namepattern.egg-info/top_level.txt

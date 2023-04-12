@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: namepattern
+Version: 0.0.1
+Summary: Printing name pattern with python
+Home-page: UNKNOWN
+Author: Arijit Ghosh
+Author-email: subhasghosh196@gmail.com
+License: UNKNOWN
+Keywords: python,namepattern,pattern
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that prints name pattern with python takes input, design style(pattern type), and length from user and prints the pattern.
+
