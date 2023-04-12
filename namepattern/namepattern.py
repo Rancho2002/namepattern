@@ -1,12 +1,11 @@
 def A(point: str, n: int) -> None:
     for i in range(n):
         for j in range(n):
-            if (i == 0 or j == 0 or j == n-1 or i == n//2):
+            if (i == 0 and j!=0 and j!=n-1 or j == 0 and i!=0 or j == n-1 and i!=0 or i == n//2):
                 print(point, end="")
             else:
                 print(len(point)*" ", end="")
         print()
-
 
 def B(point: str, n: int) -> None:
     for i in range(n):
@@ -61,7 +60,7 @@ def F(point: str, n: int) -> None:
 def G(point: str, n: int) -> None:
     for i in range(n):
         for j in range(n):
-            if (i == 0 or j == 0 or i == n-1 and j < n//2 or j == n//2 and i >= n//2 or i == n//2 and j > n//2 or j == n-1 and i > n//2):
+            if (i == 0 and j!=0 or j == 0 and i!=0 and i!= n-1 or i == n-1 and j!=0 and j < n//2 or j == n//2 and i >= n//2 or i == n//2 and j > n//2 or j == n-1 and i > n//2):
                 print(point, end="")
             else:
                 print(len(point)*" ", end="")
@@ -185,7 +184,7 @@ def Q(point: str, n: int) -> None:
 def R(point: str, n: int) -> None:
     for i in range(n):
         for j in range(n):
-            if (i == 0 or j == 0 or j == n-1 and i <= n//2 or i == n//2 or i == j and i > n//2):
+            if (i == 0 and j!=n-1 or j == 0 or j == n-1  and i < n//2 and i!=0  or i == n//2 and j!=n-1 or i == j and i > n//2):
                 print(point, end="")
             else:
                 print(len(point)*" ", end="")
@@ -288,139 +287,79 @@ def Z(point: str, n: int) -> None:
                 print(len(point)*" ", end="")
         print()
 
-# A('* ', 9)
 
-# print()
-# A('* ', 6)
 
-# B('* ', 9)
+class Namepattern:
+    def __init__(self,pattern: str,design:str="^^",n:int=5) -> None:
+        self.pattern=pattern
+        self.design=design
+        self.n=n
 
-# print()
-# B('* ', 6)
+    def displayName(self) -> None:
+            '''This function will print the any name as pattern'''
+            # create a docstring
+            pattern=self.pattern.upper()
+            design=self.design
+            n=self.n
+            for i in pattern:
+                if i == "A":
+                    A(design, n)
+                elif i == "B":
+                    B(design, n)
+                elif i == "C":
+                    C(design, n)
+                elif i == "D":
+                    D(design, n)
+                elif i == "E":
+                    E(design, n)
+                elif i == "F":
+                    F(design, n)
+                elif i == "G":
+                    G(design, n)
+                elif i == "H":
+                    H(design, n)
+                elif i == "I":
+                    I(design, n)
+                elif i == "J":
+                    J(design, n)
+                elif i == "K":
+                    K(design, n)
+                elif i == "L":
+                    L(design, n)
+                elif i == "M":
+                    M(design, n)
+                elif i == "N":
+                    N(design, n)
+                elif i == "O":
+                    O(design, n)
+                elif i == "P":
+                    P(design, n)
+                elif i == "Q":
+                    Q(design, n)
+                elif i == "R":
+                    R(design, n)
+                elif i == "S":
+                    S(design, n)
+                elif i == "T":
+                    T(design, n)
+                elif i == "U":
+                    U(design, n)
+                elif i == "V":
+                    V(design, n)
+                elif i == "W":
+                    W(design, n)
+                elif i == "X":
+                    X(design, n)
+                elif i == "Y":
+                    Y(design, n)
+                elif i == "Z":
+                    Z(design, n)
+                elif i==" ":
+                    print("\n")
+                else:
+                    print("Invalid character found at index", i, ". Program Terminated.")
+                    exit(0)
+                #space between letters
+                print("\n")
 
-# C('* ', 9)
-
-# print()
-# C('* ', 6)
-
-# D('* ', 9)
-
-# print()
-# D('* ', 6)
-
-# E('* ', 9)
-
-# print()
-# E('* ', 6)
-
-# F('* ', 9)
-
-# print()
-# F('* ', 6)
-
-# G('* ', 9)
-
-# print()
-# G('* ', 6)
-
-# H('* ', 9)
-
-# print()
-# H('* ', 6)
-
-# I('* ', 9)
-
-# print()
-# I('* ', 6)
-
-# J('* ', 9)
-
-# print()
-# J('* ', 6)
-
-# K('* ', 9)
-
-# print()
-# K('* ', 6)
-
-# L('* ', 9)
-
-# print()
-# L('* ', 6)
-
-# M('* ', 9)
-
-# print()
-# M('* ', 6)
-
-# N('* ', 9)
-
-# print()
-# N('* ', 6)
-
-# O('* ', 9)
-
-# print()
-# O('* ', 6)
-
-# P('* ', 9)
-
-# print()
-# P('* ', 6)
-
-# Q('* ', 9)
-
-# print()
-# Q('* ', 6)
-
-# R('* ', 9)
-
-# print()
-# R('* ', 6)
-
-# S('* ', 9)
-
-# print()
-# S('* ', 6)
-
-# T('* ', 9)
-
-# print()
-# T('* ', 6)
-
-# U('* ', 9)
-
-# print()
-# U('* ', 6)
-
-# V('* ', 9)
-
-# print()
-# V('* ', 6)
-
-# W('* ', 9)
-
-# print()
-# W('* ', 6)
-
-# X('* ', 9)
-
-# print()
-# X('* ', 6)
-
-# Y('* ', 9)
-
-# print()
-# Y('* ', 6)
-
-# Z('* ', 9)
-
-# print()
-# Z('* ', 6)
-
-    # print(f'''
-    # {chr(i+65)}('* ',9)\n
-    # print()
-    # {chr(i+65)}('* ',6)\n
-    # ''')
-
+# displayName("Arij32it ghosh")

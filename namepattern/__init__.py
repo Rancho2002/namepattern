@@ -1,0 +1,1 @@
+from namepattern import Namepattern
