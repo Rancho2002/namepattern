@@ -296,7 +296,7 @@ class Namepattern:
         self.n=n
 
     def displayName(self) -> None:
-            '''This function will print the any name as pattern'''
+            '''This function will print any name as pattern'''
             # create a docstring
             pattern=self.pattern.upper()
             design=self.design
