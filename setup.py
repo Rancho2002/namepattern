@@ -1,8 +1,8 @@
 from setuptools import setup
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Printing name pattern with python'
-LONG_DESCRIPTION = 'A package that prints name pattern with python takes input, design style(pattern type), and length from user and prints the pattern.'
+LONG_DESCRIPTION = 'A package that prints name pattern with python takes input, design style(pattern type), and length from user and prints the pattern. Use '
 
 # Setting up
 setup(

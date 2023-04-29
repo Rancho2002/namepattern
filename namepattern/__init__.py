@@ -290,13 +290,17 @@ def Z(point: str, n: int) -> None:
 
 
 class Namepattern:
+
+    def __str__(self) -> str:
+        return "\n\n****This object now can print any pattern you give as argument. Use displayName() function to print the pattern in terminal.****\n\n"
+
     def __init__(self,pattern: str,design:str="^^",n:int=5) -> None:
         self.pattern=pattern
         self.design=design
         self.n=n
 
     def displayName(self) -> None:
-            '''This function will print any name as pattern'''
+            '''\n\n****This function takes no argument and returns None. So, function call is enough to see the pattern.****\n\n'''
             # create a docstring
             pattern=self.pattern.upper()
             design=self.design
@@ -355,11 +359,9 @@ class Namepattern:
                 elif i == "Z":
                     Z(design, n)
                 elif i==" ":
-                    print("\n")
+                    print()
                 else:
                     print("Invalid character found at index", i, ". Program Terminated.")
                     exit(0)
-                #space between letters
-                print("\n")
+                print()
 
-# displayName("Arij32it ghosh")
