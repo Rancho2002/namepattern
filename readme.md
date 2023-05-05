@@ -14,7 +14,7 @@ name.displayName()
 
 And yeah, see the magic.
 
-Output:
+# Output:
 ![image](https://user-images.githubusercontent.com/92109154/236415440-3c4b739d-867f-41e6-8f2c-acba044989ed.png)
 
 
